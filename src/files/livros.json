@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "codigo": "04657464-f542-4093-9119-9c09aeb04113",
+    "nome": "Dom Casmurro",
+    "quantidadePages": "256",
+    "genero": "Romance",
+    "autor": "Machado de Assis"
+  },
+  {
+    "codigo": "43f78a19-2331-4722-a084-362dd1bf9c4b",
+    "nome": "A hora da estrela",
+    "quantidadePages": "87",
+    "genero": "Romance",
+    "autor": "Clarice Lispector "
+  },
+  {
+    "codigo": "a21b151b-3967-4d54-b52a-e99bc0313fef",
+    "nome": "1984",
+    "quantidadePages": "328",
+    "genero": "Distopia",
+    "autor": "George Orwell"
+  },
+  {
+    "codigo": "7166ffc7-a76b-415c-b510-761726cd733f",
+    "nome": "The great Gatsby",
+    "quantidadePages": "180",
+    "genero": "novela",
+    "autor": "Scott Fitzgerald"
+  },
+  {
+    "codigo": "04c01263-4ae2-42ec-a089-d781cc52f06c",
+    "nome": "O Hobbit",
+    "quantidadePages": "310",
+    "genero": "Fantasía",
+    "autor": "Tolkien"
+  },
+  {
+    "codigo": "754d9035-04cb-4a21-ac7c-36a994754cb1",
+    "nome": "A guerra dos Tronos",
+    "quantidadePages": "694",
+    "genero": "Fantasia",
+    "autor": "G.R.R Martin"
+  },
+  {
+    "codigo": "814f5916-87ab-4c2f-a7af-af38ea2adfb9",
+    "nome": "Harry potter e a pedra filosofal",
+    "quantidadePages": "332",
+    "genero": "Fantasia",
+    "autor": "J. K. Rowling"
+  },
+  {
+    "codigo": "d903dc6c-8d1e-4884-9acf-6acfd0611092",
+    "nome": "Vidas secas",
+    "quantidadePages": "175",
+    "genero": "Romance",
+    "autor": "Graciliano Ramos"
+  },
+  {
+    "codigo": "eddc89a5-c78b-429a-a7cb-f118b5efbe70",
+    "nome": "O alquimista",
+    "quantidadePages": "206",
+    "genero": "Ficção",
+    "autor": "Paulo Coelho"
+  },
+  {
+    "codigo": "a664daa9-601a-4514-8aaa-c1691b47ff31",
+    "nome": "Orgulho e preconceito",
+    "quantidadePages": "279",
+    "genero": "Novela",
+    "autor": "Jane Austen"
+  }
+]
