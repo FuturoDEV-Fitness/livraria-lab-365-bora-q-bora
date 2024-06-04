@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "nome": "Pedro Ivo",
+    "codigo": "6fdc4b63-be4c-46e3-8a06-26b4587087f9",
+    "descricao": "test create auditorio",
+    "qtdPessoasSuportadas": "120"
+  },
+  {
+    "codigo": "c7bf07aa-68b0-4701-971c-fb40949e40e4",
+    "nome": "teste 02",
+    "descricao": "teste create 02",
+    "qtdPessoasSuportadas": "150"
+  }
+]
