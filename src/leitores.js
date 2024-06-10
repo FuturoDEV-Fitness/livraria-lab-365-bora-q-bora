@@ -1,34 +1,81 @@
+const Leitor = require ('./classes/Leitor');
 const readline = require('readline/promises');
+const LeitorCrud = require('./classes/LeitorCrud');
 
-const rl = readline.createInterface({
+const input = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
+    terminal: false
 });
 
 async function run() {
 
-    const resposta = await rl.question('Escolha uma ação (criar, deletar, alterar, consultar): ');
+    const resposta = await input.question('Escolha uma ação (criar, deletar, alterar, consultar): ');
 
     switch (resposta) {
         case 'criar':
-            /* Coloque sua resposta aqui  */
-            rl.close();
+
+            const nome = await input.question('Digite o nome do leitor: ');
+
+            const cpf = await input.question('Digite o CPF do leitor: ');
+
+            const dataNascimento = await input.question('Digite a data de nascimento do leitor: ');
+
+            const leitor = new Leitor(nome, cpf, dataNascimento);
+           /*  leitor.setNome = nome;
+            leitor.setCpf = cpf;
+            leitor.setDataDeNascimento = dataNascimento */
+           /*  leitor.setNome = nome
+            leitor.setCpf = cpf
+            leitor.setDataDeNascimento = dataNascimento */
+            
+
+            console.log(`Leitor criado com nome: ${leitor.getNome}\nCPF: ${leitor.getCpf}\nData de nascimento:${leitor.getDataDeNascimento}`)
+
+            const crud = new LeitorCrud()
+            crud.criar(leitor)
+            
+            input.close();
             break;
+
         case 'deletar': {
             /* Coloque sua resposta aqui */
-            rl.close();
+            input.close();
             break;
         }
+
         case 'consultar': {
+
+            const paraConsultar = await input.question("Qual é o nome do usuário? " )
+
+            const crud = new LeitorCrud()
+            crud.consultar(paraConsultar)
+
+
             /* Coloque sua resposta aqui */
-            rl.close();
+            input.close();
             break;
         }
         default:
             console.log("Ação não reconhecida.");
-            rl.close();
+            input.close();
     }
 
 }
 
 run();
+
+
+/* const conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, 'utf-8'))
+
+        conteudoAtual.push({
+            codigo: autor.getCodigo,
+            nome: autor.getNome,
+            generoLiterario: autor.getGeneroLiterario
+        })
+
+        fs.writeFileSync(
+            this.filePath,
+            JSON.stringify(conteudoAtual),
+            'utf-8'
+        ) */

@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "codigo": 1717208611126,
+    "nome": "d",
+    "cpf": "d",
+    "dataDeNascimento": "d"
+  },
+  {
+    "codigo": 1717208647352,
+    "nome": "Wallis",
+    "cpf": "40681578807",
+    "dataDeNascimento": "27/09/1991"
+  },
+  {
+    "codigo": 1717208799168,
+    "nome": "Ana",
+    "cpf": "f",
+    "dataDeNascimento": "f"
+  }
+]
