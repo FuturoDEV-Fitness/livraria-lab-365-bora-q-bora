@@ -10,7 +10,7 @@ const input = readline.createInterface({
 
 async function run() {
 
-    const resposta = await input.question('Escolha uma ação (criar, deletar, alterar, consultar): ');
+    const resposta = await input.question('Escolha uma ação (criar, deletar, consultar): ');
 
     switch (resposta) {
         case 'criar':
@@ -40,6 +40,10 @@ async function run() {
 
         case 'deletar': {
             /* Coloque sua resposta aqui */
+            const nome = await input.question('Informe o nome do usuário que deseja deletar: ');
+            
+            const leitorCrud = new LeitorCrud();
+            leitorCrud.deleteLeitor(nome);
             input.close();
             break;
         }

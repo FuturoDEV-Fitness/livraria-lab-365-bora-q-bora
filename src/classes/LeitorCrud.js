@@ -39,6 +39,26 @@ class LeitorCrud {
         )
     }
 
+    deleteLeitor(nome){
+        let conteudoAtual = JSON.parse(fs.readFileSync(this.filePath, 'utf-8'));
+       
+        const tamanhoInicial = conteudoAtual.length;
+
+        conteudoAtual = conteudoAtual.filter((leitor) => leitor.nome !== nome);
+
+        if(conteudoAtual.length === tamanhoInicial){
+            console.log(`O Leitor ${nome} não foi encontrado.`);
+            return;
+        }
+
+        fs.writeFileSync(
+            this.filePath,
+            JSON.stringify(conteudoAtual, null, 2),
+            'utf-8'
+        );
+        console.log(`Leitor ${nome} - Deletado com sucesso!`)
+    }
+
 }
 
 module.exports = LeitorCrud;
